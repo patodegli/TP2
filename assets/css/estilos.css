@@ -1,0 +1,298 @@
+/*
+---------------------------------------------
+Índice
+------------------------------------------------
+1. Typography
+2. Main Nav
+3. Home
+4. About
+5. Work
+6. Single Work
+7. Pricing
+8. Contact
+--------------------------------------------- */
+
+html, body {font-family: 'Roboto Condensed', sans-serif !important;}
+/* Typography */
+p, a {font-weight: 400;}
+.h2 {font-size: 40px;}
+.h3 {font-size: 28px;}
+.light-300 {
+  font-family: 'Roboto Condensed', sans-serif !important;
+  font-weight: 300;
+}
+.text-about {
+  text-align: center;
+}
+
+.progress-bar {
+  background-color: #ed71b8;
+}
+.regular-400 {
+  font-family: 'Roboto Condensed', sans-serif !important;
+  font-weight: 400;
+}
+.semi-bold-600 {
+  font-family: 'Roboto Condensed', sans-serif !important;
+  font-weight: 600;
+}
+.typo-space-line::after,
+.typo-space-line-center::after {
+  content: "";
+  width: 150px;
+  display:block;
+  position: absolute;
+  border-bottom:  5px solid #6266ea;
+  padding-top: .5em;
+}
+.typo-space-line-center::after {
+  left: 50%;
+  margin-left: -75px;
+}
+.pato-logo {
+  font-family: 'Lobster', cursive !important;
+}
+
+.icon-footer {
+  font-size: 8px !important;
+  margin: 4px;
+}
+
+/*color de botones del sitio*/
+.btn-outline-primary:hover,
+.btn-outline-primary.active,
+.btn-outline-primary:active:focus,
+.btn-outline-primary:focus,
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary.active,
+.btn-secondary:active:focus,
+.btn-secondary:focus,
+.btn-secondary:active {
+  color: #f6f9fe;
+  background-color: #ed71b8;
+  border-color: #ed71b8;
+  -webkit-box-shadow: 0 0 0 0.25rem #ed71b8;
+  box-shadow: 0 0 0 0.25rem #ed71b8;
+}
+
+/*color de íconos de la navbar*/
+.text-primary {
+  color: #37d7e9 !important;
+}
+/* Main Nav */
+.text-secondary {
+  color: #37d7e9 !important;
+}
+.text-muted {
+  color: #ecedf2 !important;
+}
+#main_nav .nav-item .nav-link:hover {color: #fff;}
+/* Home */
+#index_banner {
+  background-image: url('./../img/perro2.jpg');
+  background-position: center center; background-size: cover;
+  height: 100%;
+  min-height: 60vh;
+  width: 100%;
+}
+
+/* color de línea bajo el texto*/
+.typo-space-line::after {
+  border-bottom: 5px solid #37d7e9;
+}
+
+/* color botón slider*/ 
+.btn-outline-primary {
+  color: #37d7e9;
+  border-color: #37d7e9;
+}
+
+#index_banner .carousel-item {
+  min-height: 60vh;
+}
+#index_banner .carousel-control-prev i,
+#index_banner .carousel-control-next i {
+  color: #37d7e9 !important;
+  text-decoration: none;
+  font-size: 4em;
+}
+#index_banner .carousel-inner {
+  height: 80vh;
+}
+#index_banner .carousel-indicators li,
+#index_banner .carousel-indicators.active {
+  background-color: #37d7e9 !important;
+  /* las rayas de abajo del carrousel van de color azul*/
+}
+
+/*color de banda en el home y footer*/
+.bg-secondary {
+  background: rgb(241,183,215);
+  background: linear-gradient(318deg, rgba(241,183,215,1) 3%, rgba(146,221,230,1) 34%, rgba(55,215,233,1) 100%);
+}
+.bg-primary {
+  background-color: #2a9ca8 !important;
+}
+
+.service-wrapper .service-footer {
+  max-width: 720px;
+}
+.service-work.card {
+  border-radius: 10px !important;
+  cursor: pointer;
+}
+.service-work .service-work-vertical {
+	background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 33.33%, rgba(255,255,255,1) 66.66%, rgba(255,255,255,0) 99.99%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover * {
+  color: #000;
+  border-color: #000;
+  transition: .5s;
+}
+.recent-work.card{
+  border-radius: 10px !important;
+}
+.recent-work .recent-work-vertical {
+	background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, #ed71b8 66.666%, rgba(255,255,255,0) 99.999%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+  cursor: pointer;
+}
+.recent-work .recent-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.recent-work .recent-work-vertical:hover div.recent-work-content {
+  top: 50%;
+  margin-top: -2.5em;
+  position: absolute;
+}
+.recent-work .recent-work-vertical:hover * {
+  color: white;
+  transition: .5s;
+}
+/* About */
+
+.img-about {
+  display: flex;
+  justify-content: center;
+}
+#work_banner {
+  background-image: url('./../img/banner-bg-02.jpg');
+  background-position: center center; background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.progress {
+  height: 8px;
+}
+.objective-icon {
+  border-radius: 13px;
+  width: 8rem;
+}
+.partner-wap {
+  background-color: #7276ec;
+  transition: 1s;
+  cursor: pointer;
+}
+.partner-wap:hover {
+  background-color: #b1b3f5;
+}
+.why-us {
+  background: rgb(239,239,253);
+  background: -moz-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  background: -webkit-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  background: linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efeffd",endColorstr="#ffffff",GradientType=1);
+}
+.team-member-img {
+  transition-duration: 0.15s;
+}
+.team-member:hover .team-member-img {
+  padding: 10px !important;
+}
+
+/* Work */
+/* Singel Work */
+#work_single_banner {
+  background-image: url('./../img/banner-bg-02.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.related-content {
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* Pricing */
+.pricing-list {
+  margin-bottom: 1px;
+}
+.pricing-table {
+  max-width: 350px;
+  margin: auto;
+}
+.pricing-table,
+.pricing-horizontal {
+  border-radius: 15px !important;
+}
+/* Contact */
+#floatingtextarea {
+  height: 150px
+}
+.contact-img {
+  justify-content: center;
+  display: flex;
+}
+/* Footer */
+footer a.text-light:hover {
+  color: #bfbfbf !important;
+  transition-duration: 0.15s;
+}
+/*Botones de donación*/
+.pricing-table-footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* alineación de texto en recuadro*/
+.text-donate {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* shadow de las cajas*/
+
+.shadow-sm {
+  -webkit-box-shadow: 0 .150rem .50rem rgba(0,0,0,.175)!important;
+  box-shadow: 0 .150rem .50rem rgba(0,0,0,.175)!important;
+}
+
+/* imagen de fondo de los productos*/
+.img-product {
+  width: 200px !important;
+  height: 200px !important;
+  object-fit: cover !important;
+  /* background-color: white !important; */
+}
+
+.bg-light {
+  background-color: #fce0f0 !important;
+}
